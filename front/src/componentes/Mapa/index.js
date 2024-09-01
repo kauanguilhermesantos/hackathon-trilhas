@@ -1,8 +1,11 @@
 // src/componentes/Mapa.js
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+
+import iconURL from "leaflet/dist/images/marker-icon.png";
+import shadowUrl from "leaflet/dist/images/marker-shadow.png";
 
 // Defina os dados dos polos de tecnologia
 const polos = [
@@ -14,11 +17,11 @@ const polos = [
 const Mapa = () => {
     // Configura o ícone do marcador
     const icon = new L.Icon({
-        iconUrl: require('leaflet/dist/images/marker-icon.png'),
+        iconUrl: iconURL,
         iconSize: [25, 41],
         iconAnchor: [12, 41],
         popupAnchor: [1, -34],
-        shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+        shadowUrl: shadowUrl,
         shadowSize: [41, 41],
     });
 

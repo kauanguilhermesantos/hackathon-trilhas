@@ -6,6 +6,7 @@ import './menu.css'; // Para estilos
 const Menu = () => {
     return (
         <div className="menu">
+            
             <Link to="/">Início</Link>
             <Link to="/sobre">Sobre</Link>
             <Link to="/contato">Contato</Link>
