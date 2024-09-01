@@ -1,6 +1,6 @@
 import { equipamento } from "../model/Equipamento.js";
 
-export class EquipamentoController{
+export class EquipamentoControllers{
     static async getEquipamentos(req, res){
         const showEquipamentos = await equipamento.find({});
         res.status(200).json(showEquipamentos);
