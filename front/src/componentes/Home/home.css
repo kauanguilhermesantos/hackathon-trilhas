@@ -1,0 +1,23 @@
+/* src/componentes/Home.css */
+.home {
+    padding: 20px;
+    background-color: #f4f4f4; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+}
+
+.home-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.home-info, .home-cursos, .home-contato {
+    margin: 20px 0;
+    padding: 15px;
+    background: white; /* Fundo branco para se destacar */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h2 {
+    color: #007bff; /* Cor do título */
+}
