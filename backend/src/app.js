@@ -1,5 +1,6 @@
 import express from "express";
 import { connectToDatabase } from "./config/dbConnection.js";
+import routes from "./routes/index.js";
 
 const connection = await connectToDatabase();
 
@@ -12,3 +13,4 @@ connection.once("open", ()=>{
 });
 
 export const app = express();
+routes(app);
