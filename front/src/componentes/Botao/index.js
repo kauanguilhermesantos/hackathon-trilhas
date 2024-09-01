@@ -2,7 +2,7 @@ import './botao.css'
 
 const Botao = ({texto}) => {
     return <button className="botao">
-        {texto}
+        {texto="Salvar"}
     </button>
 }
 
