@@ -30,9 +30,9 @@ function App() {
   // um card incial
   const inicial = [
     {
-      nome: "WALLACE PABLO",
-      cargo: "Desenvolvedor Python e JavaScript na Alura",
-      imagem: "https://github.com/PabloJ4.jpeg",
+      nome: "Monitor",
+      cargo: "novo",
+      imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvg8uXf11QG_m2vqRaZlQR7dlqCz-jRASEfg&s.png",
       time: times[0].nome,
     },
   ];
