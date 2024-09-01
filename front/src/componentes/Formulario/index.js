@@ -25,7 +25,7 @@ const Formulario = ({aoCadastrar, times}) => {
     return (
         <section className="formulario-container">
             <form className="formulario" onSubmit={aoSubmeter}>
-                <h2>Preencha os dados para criar o card do colaborador.</h2>
+                <h2>Preencha os dados do material para doação</h2>
                 <CampoTexto
                     obrigatorio={true}
                     label='Empresa'
@@ -48,7 +48,7 @@ const Formulario = ({aoCadastrar, times}) => {
                     items={times} 
                     valor={time}
                     aoAlterado={valor => setTime(valor)}/>
-                <Botao texto='Enviar' />
+                <Botao texto='Salvar' />
             </form>
         </section>
     )
