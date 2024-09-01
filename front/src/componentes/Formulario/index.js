@@ -40,22 +40,16 @@ const Formulario = ({aoCadastrar, times}) => {
                     valor={cargo}
                     aoAlterado={valor => setCargo(valor)}/>
                 
+                <CampoTexto 
+                    label='Imagem' 
+                    placeholder='Informe o endereço da imagem '
+                    aoAlterado={valor => setImagem(valor)}/>
                 <ListaSuspensa 
                     obrigatorio={true}
-                    label='Situação dos equipamentos:'
+                    label='Situação do equipamento:'
                     items={times} 
                     valor={time}
                     aoAlterado={valor => setTime(valor)}/>
-
-
-              {/* <CampoTexto  
-                    label='Imagem:'
-                   /> */}
-                   <CampoImagem
-                   label="Imagem:"
-                   />
-                <label>Imagem</label>
-                <input type='file'></input>
                 <Botao texto='Salvar' />
             </form>
         </section>
