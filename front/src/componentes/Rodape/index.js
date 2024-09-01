@@ -27,7 +27,7 @@ const Rodape = () => {
        </section>
        <section>
         <p>
-            Desenvolvido por Alura.
+        Desenvolvido por Doatech.
         </p>
        </section>
     </footer>)
