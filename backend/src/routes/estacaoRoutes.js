@@ -6,6 +6,6 @@ const routes = express.Router();
 
 routes.get("/estacoesTech", CorsMiddlewares.corsPermission, estacaoController.listarEstacoes);
 routes.post("/estacoesTech", CorsMiddlewares.corsPermission, estacaoController.adicionarEstacao);
-routes.delete("/estacoesTech", CorsMiddlewares.corsPermission, estacaoController.removerEmpresaById);
+routes.delete("/estacoesTech/:id", CorsMiddlewares.corsPermission, estacaoController.removerEmpresaById);
 
 export default routes;
