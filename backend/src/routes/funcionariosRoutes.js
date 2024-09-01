@@ -1,6 +1,6 @@
 import express from "express";
 import { CorsMiddlewares } from "../middlwares/Middlwares.js";
-import { FuncionariosControllers } from "../controllers/FuncionarioControllers.js";
+import { FuncionariosControllers } from "../controllers/funcionarioControllers.js";
 
 const routes = express.Router();
 
