@@ -70,12 +70,11 @@
 
 .menu-toggle {
     display: none; /* Oculta o botão de menu em telas grandes */
-    background-color: blue;
-    scale: 1.1;
+    /*background-color: blue;*/
     width: 30px;
     height: 20px;
     align-items: center;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
 }
 
 .menu-toggle-button {

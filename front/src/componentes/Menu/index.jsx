@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./menu.css";
 import imgDoaTech from "../../assets/logo/logo-doatech1.png";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,10 @@ const Menu = () => {
         <button
           className={`menu-toggle ${isOpen ? "active" : ""}`}
           onClick={toggleMenu}
-        ></button>
+        >
+          <GiHamburgerMenu size={20} />
+        </button>
+
         <div className={`lista ${isOpen ? "active" : ""}`}>
           <Link className="listaMenu" to="/">
             Início
