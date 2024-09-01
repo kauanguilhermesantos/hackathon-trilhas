@@ -3,6 +3,7 @@ import { connectToDatabase } from "./config/dbConnection.js";
 import routes from "./routes/index.js";
 
 const connection = await connectToDatabase();
+const app = express();
 
 connection.on("error", (error) => {
   console.log("connection error");
@@ -14,4 +15,4 @@ connection.once("open", () => {
 
 routes(app);
 
-export const app = express();
+export default app;
