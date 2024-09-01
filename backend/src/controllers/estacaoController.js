@@ -1,7 +1,6 @@
 import { estacaoTech } from "../model/EstacaoTech.js";
 
-export class etController {
-
+export default class estacaoController {
   static async listarEstacoes(req, res) {
     try {
       const estacoesRetornadas = await estacaoTech.find();
@@ -9,7 +8,6 @@ export class etController {
     } catch (erro) {
       res.status(500).json({ message: "nao foi possivel listar estacoes" });
     }
-
   }
   static async adicionarEstacao(req, res) {
     try {
@@ -18,7 +16,7 @@ export class etController {
         nome: novaEstacao.nome,
         gestor: novaEstacao.gestor,
         contato: novaEstacao.contato,
-        endereco: novaEstacao.endereco
+        endereco: novaEstacao.endereco,
       });
       res.status(200).json(estacoesRetornadas);
     } catch (erro) {
@@ -29,11 +27,10 @@ export class etController {
   static async removerEmpresaById(req, res) {
     try {
       const { id } = req.params;
-      await estacaoTech.deleteOne({id})
+      await estacaoTech.deleteOne({ id });
       res.status(200).json({ message: "objeto removido" });
     } catch (erro) {
-
+      res.json({ message: "erro ao excluir" });
     }
   }
-
 }

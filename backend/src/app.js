@@ -3,14 +3,16 @@ import { connectToDatabase } from "./config/dbConnection.js";
 import routes from "./routes/index.js";
 
 const connection = await connectToDatabase();
+const app = express();
 
-connection.on("error", (error)=>{
-    console.log("connection error")
+connection.on("error", (error) => {
+  console.log("connection error");
 });
 
-connection.once("open", ()=>{
-    console.log("Connection success.")
+connection.once("open", () => {
+  console.log("Connection success.");
 });
 
-export const app = express();
 routes(app);
+
+export default app;
