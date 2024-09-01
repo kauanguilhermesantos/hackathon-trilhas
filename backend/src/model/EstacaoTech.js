@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { gestorSchema } from "./Gestor";
+import { gestorSchema } from "./Gestor.js";
 
 const estacaoTechSchema = new mongoose.Schema({
     id: {type: mongoose.Schema.Types.ObjectId},
@@ -13,4 +13,4 @@ const estacaoTechSchema = new mongoose.Schema({
 
 }, {versionKey: false});
 
-export const estacaoTech = mongoose.Model("estacoesTech", estacaoTechSchema);
+export const estacaoTech = mongoose.model("estacoesTech", estacaoTechSchema);

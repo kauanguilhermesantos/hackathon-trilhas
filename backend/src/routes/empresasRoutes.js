@@ -8,3 +8,5 @@ routes.get("/empresas", CorsMiddlewares.corsPermission, EmpresasControllers.getE
 routes.post("/empresas", CorsMiddlewares.corsPermission, EmpresasControllers.postEmpresas);
 routes.put("/empresas", CorsMiddlewares.corsPermission, EmpresasControllers.updateEmpresas);
 routes.delete("/empresas", CorsMiddlewares.corsPermission, EmpresasControllers.deleteEmpresa);
+
+export default routes;

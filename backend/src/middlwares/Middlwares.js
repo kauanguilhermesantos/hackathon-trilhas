@@ -1,5 +1,5 @@
 import cors from "cors";
-import { app } from "../app.js";
+import app from "../app.js";
 
 export class CorsMiddlewares{
     static async corsPermission(req, res, next){
