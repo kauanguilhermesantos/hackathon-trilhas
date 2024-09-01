@@ -6,34 +6,36 @@
     --cor-azul-secundaria: #72d6fe;
     --cor-azul-terciaria: #d7f7ff;
     --cor-cinza: #f2f2f2;
+    --cor-vermelha-primaria: #e53935;
 }
+
 .menu {
-    /* border: 1px solid red; */
-    width: 97%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--cor-cinza);
-    padding: 1rem 3rem 1rem 3rem;
-    /* margin-right: 40rem; */
-    /* padding: 0.4rem 8rem 0.4rem 8rem; */
+    padding: 1rem 3rem;
     box-shadow: 0.3rem 0.3rem 0.5rem #0000003f;
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     z-index: 1000;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas pequenas */
 }
 
 .imgMenu > img {
-    /* border: 1px solid red; */
-    max-width: 24rem;
+    max-width: 12rem; /* Ajuste o tamanho da imagem para dispositivos menores */
 }
 
-.menu a {
-    /* border: 1px solid red; */
+.lista {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.listaMenu {
     font-size: 1.6rem;
-    float: left;
-    display: block;
     color: var(--cor-azul-primaria);
     text-align: center;
     padding: 14px 16px;
@@ -62,4 +64,82 @@
 
 .menu a:hover {
     color: var(--cor-azul-secundaria);
+}
+
+/* Menu Hambúrguer */
+
+.menu-toggle {
+    display: none; /* Oculta o botão de menu em telas grandes */
+    background-color: blue;
+    scale: 1.1;
+    width: 30px;
+    height: 20px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.menu-toggle-button {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--cor-azul-primaria);
+}
+
+.menu-toggle-button div {
+    width: 2rem;
+    height: 0.2rem;
+    background-color: var(--cor-azul-primaria);
+    margin: 0.3rem 0;
+    transition: all 0.3s ease;
+}
+
+/* Mostrar menu-toggle em telas pequenas */
+
+@media (max-width: 768px) {
+    .itemsMenu {
+        margin: 0 2rem;
+        padding: 1rem;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .lista {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .lista.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle-button.active div:nth-child(1) {
+        transform: rotate(45deg);
+        background-color: var(--cor-vermelha-primaria);
+    }
+
+    .menu-toggle-button.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle-button.active div:nth-child(3) {
+        transform: rotate(-45deg);
+        background-color: var(--cor-vermelha-primaria);
+    }
+
+    .listaMenu {
+        font-size: 1.4rem;
+        text-align: left;
+        padding: 1rem;
+        border-bottom: 1px solid var(--cor-azul-terciaria);
+        width: 100%;
+    }
 }
