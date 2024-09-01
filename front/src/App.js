@@ -18,7 +18,7 @@ function App() {
         { nome: 'Mobile', corPrimaria: '#FFF5D9', corSecundaria: '#FFBA05' },
         { nome: 'Inovação e Gestão', corPrimaria: '#FFEEDF', corSecundaria: '#FF8A29' },
     ];
-
+ // um card incial
     const inicial = [
         {
             nome: 'WALLACE PABLO',
