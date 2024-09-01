@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { gestorSchema } from "./Gestor";
 
 const estacaoTechSchema = new mongoose.Schema({
     id: {type: mongoose.Schema.Types.ObjectId},
@@ -7,7 +8,8 @@ const estacaoTechSchema = new mongoose.Schema({
     equipamentos: {type: mongoose.Schema.Types.String},
     contato: {type: mongoose.Schema.Types.String},
     endereco: {type: mongoose.Schema.Types.String},
-    RH: {type: mongoose.Schema.Types.String}
+    RH: {type: mongoose.Schema.Types.String},
+    gestor: gestorSchema
 
 }, {versionKey: false});
 

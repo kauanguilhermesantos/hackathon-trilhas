@@ -1,4 +1,4 @@
-import { estacaoTech } from "../model/EstacaoTech";
+import { estacaoTech } from "../model/EstacaoTech.js";
 
 export class etController {
 

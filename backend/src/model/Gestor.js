@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const gestorSchema = new mongoose.Schema({
+export const gestorSchema = new mongoose.Schema({
     id: {type: mongoose.Schema.Types.ObjectId},
     nome: {type: mongoose.Schema.Types.String},
     senha: {type: mongoose.Schema.Types.String},
