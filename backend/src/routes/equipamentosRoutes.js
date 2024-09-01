@@ -6,7 +6,7 @@ const routes = express.Router();
 
 routes.get("/equipamentos", CorsMiddlewares.corsPermission, EquipamentoControllers.getEquipamentos);
 routes.post("/equipamentos", CorsMiddlewares.corsPermission, EquipamentoControllers.postEquipamentos);
-routes.put("/equipamentos", CorsMiddlewares.corsPermission, EquipamentoControllers.updateEquipamentos);
-routes.delete("/equipamentos", CorsMiddlewares.corsPermission, EquipamentoControllers.deleteEquipamento);
+routes.put("/equipamentos/:id", CorsMiddlewares.corsPermission, EquipamentoControllers.updateEquipamentos);
+routes.delete("/equipamentos/:id", CorsMiddlewares.corsPermission, EquipamentoControllers.deleteEquipamento);
 
 export default routes;
