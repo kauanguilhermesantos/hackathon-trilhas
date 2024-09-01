@@ -9,4 +9,4 @@ const empresaSchema = new mongoose.Schema({
     funcionario: funcionarioSchema
 }, {versionKey: false});
 
-export const empresa = mongoose.model("empresas", empresaSchema);
+export const Empresa = mongoose.model("empresas", empresaSchema);

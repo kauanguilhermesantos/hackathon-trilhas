@@ -13,6 +13,6 @@ connection.once("open", () => {
   console.log("Connection success.");
 });
 
-routes(app);
 
 export default app;
+routes(app);
