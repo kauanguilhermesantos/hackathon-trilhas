@@ -11,7 +11,7 @@ export class EmpresasControllers{
         const newEmpresa = req.body
         try {
             const findFuncionario = await funcionario.findById(newEmpresa.funcionario);
-            const completeEmpresa = {...newEmpresa, funcionario:{...findFuncionario._doc}};
+            const completeEmpresa = {...newEmpresa, funcionario:{...findFuncionario._id}};
             const createdEmpresa = await Empresa.create(completeEmpresa);
             res.status(201).json({message:"Empresa adicionada com sucesso.", empresa: createdEmpresa});
         } catch (error) {
