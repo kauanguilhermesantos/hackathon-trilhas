@@ -4,6 +4,7 @@ import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
 import './formulario.css'
 
+
 const Formulario = ({aoCadastrar, times}) => {
 
     const [nome, setNome] = useState('')
