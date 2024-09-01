@@ -22,9 +22,7 @@ const Rodape = () => {
             </li>
         </ul>
        </section>
-       <section>
-       <img src="/imagens/logo.png" alt="" />
-       </section>
+       
        <section>
         <p>
         Desenvolvido por Doatech.
