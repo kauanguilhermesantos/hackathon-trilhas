@@ -46,7 +46,7 @@ function App() {
 
     const Sobre = () => <h1>Sobre</h1>;
     const Contato = () => <h1>Contato</h1>;
-    const Mapa = () => <h1>Mapa</h1>;
+    const Mapa = () => <h1>Encontre um polo perto de você</h1>;
 
     return (
         <Router>
