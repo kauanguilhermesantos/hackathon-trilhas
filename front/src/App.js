@@ -23,7 +23,7 @@ function App() {
         {
             nome: 'WALLACE PABLO',
             cargo: 'Desenvolvedor Python e JavaScript na Alura',
-            imagem: 'https://github.com/PabloJ4.jpeg',
+            imagem: 'https://github.com/PabloJ4.png',
             time: times[0].nome
         },
     ];

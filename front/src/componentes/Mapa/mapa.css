@@ -1,0 +1,17 @@
+/* src/componentes/styles.css */
+.container {
+    margin: 20px;
+}
+
+.search-bar {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.map-container {
+    height: 400px; /* Ajuste a altura conforme necessário */
+    width: 100%;
+}
