@@ -27,10 +27,10 @@ const Rodape = () => {
        </section>
        <section>
         <p>
-            Desenvolvido por Alura.
+            Desenvolvido por Doatech.
         </p>
        </section>
     </footer>)
 }
 
-export default Rodape
+export default Rodape;

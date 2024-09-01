@@ -9,9 +9,13 @@ import iconURL from "leaflet/dist/images/marker-icon.png";
 import shadowUrl from "leaflet/dist/images/marker-shadow.png";
 
 const polos = [
-    { id: 1, nome: 'Polo 1', coordenadas: [-23.5505, -46.6333] },
-    { id: 2, nome: 'Polo 2', coordenadas: [-22.9068, -43.1729] },
-    { id: 3, nome: 'Polo 3', coordenadas: [-30.0346, -51.2177] },
+    { id: 1, nome: 'Estação Tech Jordoa', coordenadas: [-2.555348183222985, -44.214515415342696] },
+    { id: 2, nome: 'Estação Tech João de Deus', coordenadas: [-22.9068, -43.1729] },
+    { id: 3, nome: 'Estação Tech Forquilha', coordenadas: [-30.0346, -51.2177] },
+    { id: 4, nome: 'Estação Tech Sol e Mar', coordenadas: [-30.0346, -51.2177] },
+    { id: 5, nome: 'Estação Maracanã', coordenadas: [-2.6389736729993265, -44.271971682724306] },
+    { id: 6, nome: 'Estação Tech Itapera', coordenadas: [-30.0346, -51.2177] },
+    { id: 7, nome: 'Estação Tech Nova vida', coordenadas: [-2.6240501066878257, -44.19374203891154] },
 ];
 
 const Mapa = () => {
