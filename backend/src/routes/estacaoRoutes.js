@@ -1,14 +1,3 @@
-/*import { Router } from "express";
-import estacaoController from "../controllers/estacaoController.js";
-
-const routes = Router();
-
-routes.get("/estacoes", estacaoController.listarEstacoes);
-routes.post("/estacoes", estacaoController.adicionarEstacao);
-routes.delete("/estacoes/:id", estacaoController.removerEmpresaById);
-
-export default routes;*/
-
 import express from "express";
 import { CorsMiddlewares } from "../middlwares/Middlwares.js";
 import estacaoController from "../controllers/estacaoController.js";
